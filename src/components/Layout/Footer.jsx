@@ -4,6 +4,7 @@ import {
   Phone,
   ArrowUpRight,
 } from "lucide-react";
+import { schoolInfo } from "@/app/constants/data";
 
 const Footer = () => {
   return (
@@ -25,7 +26,7 @@ const Footer = () => {
           <div>
 
             <h2 className="text-2xl font-bold tracking-tight">
-              Sikhsapith
+              {schoolInfo.schoolName}
             </h2>
 
             <p className="mt-3 max-w-md text-sm leading-6 text-white/65">
@@ -134,7 +135,7 @@ const Footer = () => {
         <div className="mt-9 flex flex-col gap-3 border-t border-white/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
 
           <p className="text-xs text-white/40">
-            © 2026 Sikhsapith. All rights reserved.
+            © 2026 {schoolInfo.schoolName}. All rights reserved.
           </p>
 
 
